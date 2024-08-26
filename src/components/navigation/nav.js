@@ -54,6 +54,7 @@ const Navigation = ({ onNavClick }) => (
           <span className="nav-text">Opportunities</span>
         </Link>
       </Menu.Item>
+      <Menu.Item key="/polls">
       <Link to="/polls" onClick={() => onNavClick('Polls')}>
           <Icon className="nav-icon" type="folder-open" />
           <span className="nav-text">Polls</span>
