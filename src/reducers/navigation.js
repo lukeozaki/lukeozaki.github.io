@@ -10,6 +10,9 @@ switch (window.location.pathname) {
   case '/opportunities':
     initState = 'Opportunities';
     break;
+  case '/polls':
+    initState = 'Polls';
+    break;
   default:
     initState = 'Dashboard';
 }
