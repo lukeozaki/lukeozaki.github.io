@@ -229,7 +229,7 @@ class Body extends React.Component {
               id="add-new"
               onClick={(e) => this._onAddNew(e)}
             >
-              ADD NEW
+              ADD NEW1
             </Button>
             <Button
               type="primary"
