@@ -231,6 +231,14 @@ class Body extends React.Component {
             >
               ADD NEW
             </Button>
+            <Button
+              type="primary"
+              size="large"
+              id="add-new"
+              onClick={(e) => this._onAddNew(e)}
+            >
+              ADD NEW2
+            </Button>
           </div>
         </div>
 
