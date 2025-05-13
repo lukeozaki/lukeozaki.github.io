@@ -100,33 +100,13 @@
 	}(window, document, "script", "pendo"), pendo.initialize({
 		cookieDomain: '.pendo.io',
 	    visitor: {
-	        id: visitorId || "VISITOR-UNIQUE-ID",
+	        id: visitor || "VISITOR-UNIQUE-ID",
 	        role: role || "user"
 	    },
 	    account: {
-	        id: accountId || "ACCOUNT-UNIQUE-ID"
+	        id: account_id || "ACCOUNT-UNIQUE-ID"
 	    }
 	}))
-
-	var account = 'VISITOR-UNIQUE-ID';
-	var pendoAccountId = 'ACCOUNT-UNIQUE-ID';
-
-	var getCookie = function(name) {
-	var re = new RegExp(name + '=([^;]+)');
-	var cookieValue = re.exec(document.cookie);
-	if (cookieValue !== null) {
-		return unescape(cookieValue[1]);
-	} else {
-		return null;
-	}
-	};
-
-	var pendoIdentity = getCookie('pendo_identity');
-	if (pendoIdentity !== null) {
-	var cookieValues = JSON.parse(pendoIdentity);
-	var pendoVisitorId = cookieValues.visitorId;
-	var pendoAccountId = cookieValues.accountId;
-	}
     </script>
     <title>pizzaCRM</title>
     <link href="/static/css/2.fed9dcda.chunk.css" rel="stylesheet" />
