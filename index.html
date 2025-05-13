@@ -100,15 +100,15 @@
 	}(window, document, "script", "pendo"), pendo.initialize({
 		cookieDomain: '.pendo.io',
 	    visitor: {
-	        id: pendoVisitorId || "VISITOR-UNIQUE-ID",
+	        id: visitorId || "VISITOR-UNIQUE-ID",
 	        role: role || "user"
 	    },
 	    account: {
-	        id: pendoAccountId || "ACCOUNT-UNIQUE-ID"
+	        id: accountId || "ACCOUNT-UNIQUE-ID"
 	    }
 	}))
 
-	var pendoVisitorId = 'VISITOR-UNIQUE-ID';
+	var account = 'VISITOR-UNIQUE-ID';
 	var pendoAccountId = 'ACCOUNT-UNIQUE-ID';
 
 	var getCookie = function(name) {
